@@ -75,6 +75,7 @@ html, body {
     margin: 100px auto;
  	background: rgba(88, 88, 88, 0.75); /*this uses opacity of 75% for the background color*/
 	text-align: center;
+	border-radius: 25px; 
 	border: 8px solid rgb(179, 86, 57, 0.65);
 }
 
@@ -117,7 +118,7 @@ nav {
 		font-family: goudy-bookletter-1911, serif;
 		font-size: 1.2em;
 		width: 50%;     /*width percentages for responsiveness*/
-		margin: 0 auto;
+		margin: auto;
 		border: rgb(96, 133, 236);
 		border-width: 3px 0;
 		text-align: center;
@@ -125,7 +126,9 @@ nav {
 		}
 nav li{
 	display: inline-block;
-	padding: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	padding-top: 10px;
 }
 
 a{
@@ -134,7 +137,17 @@ a{
 	font-weight: bold;
 }
 
+/** 
 a:hover{
 	color: rgb(159, 209, 241);
 	background: rgba(90, 131, 86, 0.75)
+} 
+**/
+
+.grow:hover
+{
+        -webkit-transform: scale(1.3);
+        -ms-transform: scale(1.3);
+        transform: scale(1.3);
 }
+
